@@ -82,3 +82,20 @@ var r = string2int("123456")
 console.log(`r = ${r}`)
 
 
+function normalize(arr) {
+
+	var t = arr.map(function(item) 
+	{
+		var hearder = item.substring(0, 1).toUpperCase();
+		var content = item.substring(1).toLowerCase();
+		console.log(`hearder = ${hearder},content = ${content}`)
+		return hearder + content;
+	})
+
+	return t;
+
+}
+
+var nameArray = ["YUNIS","yunis","yUNis"];
+var t = normalize(nameArray)
+console.log(`t = ${t}`)
