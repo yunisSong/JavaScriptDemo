@@ -19,3 +19,29 @@ console.log(`age = ${age}`)
 
 
 
+function getAge() {
+    var y = new Date().getFullYear();
+    return y - this.birth;
+}
+
+function yunisTestApply(argument) {
+	
+}
+
+xiaoming.age(); // 25
+
+getAge.apply(xiaoming, []); // 25, this指向xiaoming, 参数为空
+
+//调用 getAge 方法 ， 指向 xiaoming ，参数为 []
+
+//
+
+
+
+
+
+
+
+
+
+
