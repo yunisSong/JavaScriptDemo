@@ -94,8 +94,34 @@ function normalize(arr) {
 
 	return t;
 
+	arr.map()
+
 }
 
 var nameArray = ["YUNIS","yunis","yUNis"];
 var t = normalize(nameArray)
 console.log(`t = ${t}`)
+
+
+// filter 过滤元素
+// 和map()类似，Array的filter()也接收一个函数。
+// 和map()不同的是，filter()把传入的函数依次作用于每个元素，
+// 然后根据返回值是true还是false决定保留还是丢弃该元素。
+
+
+var arr = ['A', '', 'B', null, undefined, 'C', '  '];
+var r = arr.filter(function (s) {
+    return s && s.trim(); 
+});
+var r1 = arr.filter(function (element, index, self) {
+    console.log(element); // 依次打印'A', 'B', 'C'
+    console.log(index); // 依次打印0, 1, 2
+    console.log(self); // self就是变量arr
+    return true;
+});
+console.log(`r = ${r}`)
+
+
+
+
+
