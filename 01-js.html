@@ -11,11 +11,58 @@
 
   	</script> -->
 
-  	 <script src="js/16.js"></script>
+  	 <script src="js/20.js"></script>
 </head>
 <body>
+	<title>我是显示测试的页面</title>
 	<div>
 		<p>我只是个假的显示页面</p>
 	</div>
+
+	<dl id="drink-menu" style="border:solid 1px #ccc;padding:6px;">
+    <dt>摩卡</dt>
+    <dd>热摩卡咖啡</dd>
+    <dt>酸奶</dt>
+    <dd>北京老酸奶</dd>
+    <dt>果汁</dt>
+    <dd>鲜榨苹果汁</dd>
+	</dl>
+
+
+
+	<div id="test-div">
+	<div class="c-red">
+	    <p id="test-p">JavaScript</p>
+	    <p>Java</p>
+	  </div>
+	  <div class="c-red c-green">
+	    <p>Python</p>
+	    <p>Ruby</p>
+	    <p>Swift</p>
+	  </div>
+	  <div class="c-green">
+	    <p>Scheme</p>
+	    <p>Haskell</p>
+	  </div>
+	</div>
+
+
+
+	<!-- HTML结构 20.js -->
+	<form id="test-register" action="#" target="_blank" onsubmit="return checkRegisterForm()">
+	    <p id="test-error" style="color:red"></p>
+	    <p>
+	        用户名: <input type="text" id="username" name="username">
+	    </p>
+	    <p>
+	        口令: <input type="password" id="password" name="password">
+	    </p>
+	    <p>
+	        重复口令: <input type="password" id="password-2">
+	    </p>
+	    <p>
+	        <button type="submit">提交</button> <button type="reset">重置</button>
+	    </p>
+	</form>
 </body>
 </html>
