@@ -14,6 +14,7 @@ function addLoadEvent(func) {
     }
   }
 }
+
 function canvastest() {
 	var
     canvas = document.getElementById('test-shape-canvas'),
@@ -34,4 +35,7 @@ function canvastest() {
 	ctx.strokeStyle = '#0000ff';
 	ctx.stroke(path);
 }
+
 addLoadEvent(canvastest)
+
+
