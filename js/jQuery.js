@@ -30,9 +30,9 @@ $(document).ready(function()
 		console.log('mouth leave');
 	});
 	//鼠标在 标签  dom 范围内移动
-	c.mousemove(function(event) {
+	c.mousemove(function(e) {
 		/* Act on the event */
-		console.log('mouth move');
+		console.log('mouth move ' + e.pageX + '  ' + e.pageY);
 
 	});
 
@@ -49,5 +49,32 @@ $(document).ready(function()
 	});
 
 
+	var button1 = $('#testPopupButton1');
+	var button2 = $('#testPopupButton2');
+
+	function popupTestWindow() {
+	    window.open('/');
+	}
+
+	button1.click(function () {
+	    popupTestWindow();
+	});
+
+	button2.click(function () {
+	    // 不立刻执行popupTestWindow()，100毫秒后执行:
+	    setTimeout(popupTestWindow, 100);
+	});
+
 });
 
+
+
+$(function () {
+    console.log('init A...');
+});
+$(function () {
+    console.log('init B...');
+});
+$(function () {
+    console.log('init C...');
+});
